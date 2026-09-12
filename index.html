@@ -6,27 +6,46 @@
 <title>pa ti melanie :3</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); padding: 20px; }
-.card { background: rgba(255,255,255,0.95); border-radius: 24px; padding: 40px 30px; max-width: 500px; width: 100%; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.15); animation: fadeIn 1.2s ease; }
-.heart { font-size: 60px; animation: latido 1.2s infinite; margin-bottom: 20px; }
-h1 { font-size: 26px; color: #d63384; margin-bottom: 24px; }
-.mensaje { font-size: 17px; line-height: 1.8; color: #444; margin-bottom: 30px; }
-.firma { font-size: 15px; color: #999; font-style: italic; }
+body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); padding: 20px; overflow-x: hidden; }
+.card { background: rgba(255,255,255,0.95); border-radius: 28px; padding: 45px 35px; max-width: 560px; width: 100%; text-align: center; box-shadow: 0 25px 70px rgba(0,0,0,0.18); animation: fadeIn 1.2s ease; position: relative; overflow: hidden; }
+.card::before { content: "💕"; position: absolute; top: -20px; left: -20px; font-size: 80px; opacity: 0.08; transform: rotate(-15deg); }
+.card::after { content: "💖"; position: absolute; bottom: -25px; right: -20px; font-size: 90px; opacity: 0.08; transform: rotate(15deg); }
+.heart { font-size: 70px; animation: latido 1.2s infinite; margin-bottom: 10px; }
+h1 { font-size: 30px; color: #d63384; margin-bottom: 8px; }
+.sub { font-size: 14px; color: #b06a8f; margin-bottom: 28px; letter-spacing: 1px; }
+.mensaje { font-size: 17px; line-height: 1.9; color: #444; margin-bottom: 30px; text-align: left; }
+.mensaje p { margin-bottom: 16px; }
+.firma { font-size: 17px; color: #d63384; font-style: italic; font-weight: 600; margin-top: 10px; }
+.deco { font-size: 22px; margin: 15px 0; letter-spacing: 5px; }
 @keyframes latido { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); } }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes flotar { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.heart, .deco { animation: latido 1.2s infinite, flotar 3s ease-in-out infinite; }
 </style>
 </head>
 <body>
 <div class="card">
 <div class="heart">💕</div>
 <h1>pa ti melanie :3</h1>
-<p class="mensaje">
-melanie jsjsjs<br><br>
-mira se q a veces la cago y me equivoco en la forma pero ps no es mi intencion hacerte sentir mal nunca <3<br><br>
-me alegra q hayas reconocido lo q paso y ps nada, sigamos :3<br><br>
-te quiero mucho jsjsjs <3
-</p>
-<div class="firma">— juan :3</div>
+<div class="sub">✦ un mensajito de juan ✦</div>
+
+<div class="mensaje">
+<p>melanieee jwashawjhk 🥺</p>
+
+<p>mira, se que a veces la cago y me equivoco en la forma, pero de verdad que nunca es mi intencion hacerte sentir mal, eso te lo juro por lo mas sagrado <3</p>
+
+<p>me alegra mucho que hayas reconocido lo que paso, eso significa mucho para mi y me demuestra que los dos podemos crecer juntos :3</p>
+
+<p>no se que haria sin ti la verdad, eres lo mejor que me ha pasado en la vida y cada dia me doy cuenta de que te amo mas y mas 💖</p>
+
+<p>perdoname si algun dia te hago sentir mal sin querer, mi amor, porque tu no te mereces eso ni de lejos.</p>
+
+<p>te amo mucho melanie, con todo mi corazon, y quiero estar contigo por mucho tiempo mas :3 💕</p>
+</div>
+
+<div class="deco">🌸 💖 🌸</div>
+
+<div class="firma">— juan :3 &lt;3</div>
 </div>
 </body>
 </html>
